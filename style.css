@@ -41,10 +41,14 @@
     text-decoration: none;
     color: #222;
     margin-left: 10px;
+    transition: background 0.8s;
+    padding: 5px;
+    border-radius: 10px;
   }
   
   #menu a:hover {
-    font-weight: bolder;
+    background: #e6712e;
+    color: #fff
   }
   
   #banner {
@@ -89,6 +93,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    max-width: 300px;
   }
   
   #creditos {
@@ -128,11 +133,16 @@
     flex-direction: column;
     background: url("./img/Malha\ grafica\ 11.png");
     background-size: 100%;
-    padding: 60px;
+    padding: 70px;
   }
   
-  #quemsomos h1{
+  #titulo{
+    color: #fff;
+    font-family: AgencyFb, sans-serif;
       margin-bottom: 20px;
+      width: 100%;
+      text-align: center;
+      margin-top: 15px;
   }
   
   #quemsomos span{
@@ -155,6 +165,7 @@
       margin-left: 30px;
   }
   #integrantes{
+    margin-top: 15px;
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -163,17 +174,44 @@
   #integrantes h2{
     color: #fff;
     font-family: AgencyFb, sans-serif;
-    margin-top: 30px;
+    padding-top: 25px;
+    padding-bottom: 20px;
+    font-size: xx-large;
   }
 
-  #cadastro{
-    color: #fff;
+  #area{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
     font-family:  AgencyFb, sans-serif;
     font-size: 25px;
+    color: #fff;
+  }
+  #cadastro{
     margin-top: 20px;
-    margin-left: 120px;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    
+  }
+  #cadastro label{
+    margin-top: 10px;
+  }
+  form input, form textarea{
+    flex:1;
+    padding: 20px;
+    margin-top: 10px;
+    border: 1px solid transparent;
   }
 
+form input:focus, form textarea:focus{
+    border: 1px solid #e6712e;
+  }
+
+  form textarea::placeholder {
+    color: #e6712e;  
+  }
   .btn_submit{
     font-family:  AgencyFb, sans-serif;
     font-size: 20px;
@@ -197,5 +235,7 @@
     margin-left: 120px;
   }
 
- 
+  #redes{
+   
+  }
   
